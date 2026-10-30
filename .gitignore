@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+**/cmake-build-*/
+dist/
+artifacts/
+.vs/
+*.user
+*.suo

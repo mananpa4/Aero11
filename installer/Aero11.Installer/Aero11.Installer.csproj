@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Aero11-Installer</AssemblyName>
+    <RootNamespace>Aero11.Installer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>1.0.0</Version>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Aero11_Metro_8.1.theme" LogicalName="Payload/Themes/Aero11_Metro_8.1.theme" />
+    <EmbeddedResource Include="..\..\Aero11_Metro_8.theme" LogicalName="Payload/Themes/Aero11_Metro_8.theme" />
+    <EmbeddedResource Include="..\..\Aero11_Seven_Clear.theme" LogicalName="Payload/Themes/Aero11_Seven_Clear.theme" />
+    <EmbeddedResource Include="..\..\Aero11_Seven_Shiny.theme" LogicalName="Payload/Themes/Aero11_Seven_Shiny.theme" />
+    <EmbeddedResource Include="..\..\Aero11_Vista.theme" LogicalName="Payload/Themes/Aero11_Vista.theme" />
+
+    <EmbeddedResource Include="..\..\Aero11\Metro\aero11_metro.msstyles" LogicalName="Payload/Aero11/Metro/aero11_metro.msstyles" />
+    <EmbeddedResource Include="..\..\Aero11\Metro\Shell\NormalColor\shellstyle.dll" LogicalName="Payload/Aero11/Metro/Shell/NormalColor/shellstyle.dll" />
+    <EmbeddedResource Include="..\..\Aero11\Metro\Shell\NormalColor\en-US\shellstyle.dll.mui" LogicalName="Payload/Aero11/Metro/Shell/NormalColor/en-US/shellstyle.dll.mui" />
+    <EmbeddedResource Include="..\..\Aero11\Seven\aero11_seven_clear.msstyles" LogicalName="Payload/Aero11/Seven/aero11_seven_clear.msstyles" />
+    <EmbeddedResource Include="..\..\Aero11\Seven\aero11_seven_shiny.msstyles" LogicalName="Payload/Aero11/Seven/aero11_seven_shiny.msstyles" />
+    <EmbeddedResource Include="..\..\Aero11\Seven\Shell\NormalColor\shellstyle.dll" LogicalName="Payload/Aero11/Seven/Shell/NormalColor/shellstyle.dll" />
+    <EmbeddedResource Include="..\..\Aero11\Seven\Shell\NormalColor\en-US\shellstyle.dll.mui" LogicalName="Payload/Aero11/Seven/Shell/NormalColor/en-US/shellstyle.dll.mui" />
+    <EmbeddedResource Include="..\..\Aero11\Vista\aero11_vista.msstyles" LogicalName="Payload/Aero11/Vista/aero11_vista.msstyles" />
+    <EmbeddedResource Include="..\..\Aero11\Vista\Shell\NormalColor\shellstyle.dll" LogicalName="Payload/Aero11/Vista/Shell/NormalColor/shellstyle.dll" />
+    <EmbeddedResource Include="..\..\Aero11\Vista\Shell\NormalColor\en-US\shellstyle.dll.mui" LogicalName="Payload/Aero11/Vista/Shell/NormalColor/en-US/shellstyle.dll.mui" />
+    <EmbeddedResource Include="..\..\Aero11\Wallpapers\img0.png" LogicalName="Payload/Aero11/Wallpapers/img0.png" />
+    <EmbeddedResource Include="..\..\Aero11\Wallpapers\img36.png" LogicalName="Payload/Aero11/Wallpapers/img36.png" />
+    <EmbeddedResource Include="..\..\Aero11\Wallpapers\Img0_81.jpg" LogicalName="Payload/Aero11/Wallpapers/Img0_81.jpg" />
+    <EmbeddedResource Include="..\..\Aero11\Wallpapers\Img0_8.jpg" LogicalName="Payload/Aero11/Wallpapers/Img0_8.jpg" />
+
+    <EmbeddedResource Include="..\..\repos\SecureUxTheme-master\bin\Release_x64\SecureUxTheme.msi" LogicalName="Payload/SecureUxTheme.msi" />
+    <EmbeddedResource Include="..\..\LICENSE" LogicalName="Payload/Licenses/Aero11-LICENSE.txt" />
+    <EmbeddedResource Include="..\..\repos\SecureUxTheme-master\COPYING" LogicalName="Payload/Licenses/SecureUxTheme-COPYING.txt" />
+  </ItemGroup>
+</Project>
